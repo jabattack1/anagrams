@@ -14,7 +14,6 @@ ActiveRecord::Base.establish_connection({:adapter => "postgresql", :host => "loc
 get '/' do
 	html = File.read('./anagram.html')
   data = Word.all.to_a
-  binding.pry
   Mustache.render(File.read('./anagram.html'), {word: data[0]["word"], word2: data[0]["word2"]})
 
 # binding.pry
