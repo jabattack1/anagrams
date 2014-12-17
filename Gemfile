@@ -8,4 +8,4 @@ gem "activerecord"
 
 gem "mustache"
 gem "activerecord"
-
+gem "pg"
